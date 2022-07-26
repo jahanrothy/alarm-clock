@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>watch</title>
+
+    <!-- Bootstrap CSS file -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Font Awesome CSS file -->
+    <link rel="stylesheet" href="assets/font-awesome/css/all.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <section class="top-section">
+
+
+        <div class="header">
+            <p>Sourcecodester</p>
+            <p class="pera"> Timer And Alram Clock</p>
+        </div>
+
+        <div class="time">
+            <h1 id="nowTimeBox"></h1>
+            <h3 id="todayDateBox"></h3>
+        </div>
+        <div class="button">
+            <button type="button" class="btn1" data-toggle="modal" data-target="#setTimerModal">
+                <i class="fas fa-stopwatch"></i>
+                    Set Timer
+            </button>
+            <button type="button" class="btn2" data-toggle="modal" data-target="#setAlarmModal">
+                <i class="fas fa-clock"></i>
+                Set Alarm
+            </button>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            <P>Timer</P>
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-title" id="timerCoundownBox">4:00</h2>
+
+                            <button id="startTimerButton" href="#" class="btn btn-primary">    <i class="fas fa-play"></i>
+                                Start
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card2 mb-4" style="max-width: 22rem;">
+                        <div class="card-header">Alarm List</div>
+                        <div class="card-body">
+                            <div class="alarm-list">
+                                <ul class="list">
+                                    <li class="list-group-item" style="display: flex;justify-content: space-between;">3:00 PM
+                                        <div class="icon-bg"><i class="fas fa-trash icon"></i></div>
+                                    </li>
+
+                                    <li class="list-group-item" style="display: flex;justify-content: space-between;">3:10 PM
+                                        <div class="icon-bg"><i class="fas fa-trash icon "></i></div>
+                                    </li>
+                                    <li class="list-group-item" style="display: flex;justify-content: space-between;">3:25 PM
+                                        <div class="icon-bg"><i class="fas fa-trash icon"></i></div>
+                                    </li>
+                                    <li class="list-group-item" style="display: flex;justify-content: space-between;">3:30 PM
+                                        <div class="icon-bg"><i class="fas fa-trash icon"></i></div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </section>
+
+
+    <!-- Set Timer Modal -->
+    <div class="modal fade" id="setTimerModal" tabindex="-1" role="dialog" aria-labelledby="setTimerModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="setTimerModalLabel">Set Timer</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+
+                    <div class="form-group">
+                        <label for="setTimerSetMinuts">Minuts</label>
+                        <input type="number" class="form-control" id="setTimerSetMinuts" placeholder="Enter Minutes">
+                    </div>
+                    <div class="form-group">
+                        <label for="setTimerSetSeconds">Seconds</label>
+                        <input type="number" class="form-control" id="setTimerSetSeconds" placeholder="Enter Seconds">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" id="setTimerButton" class="btn btn-primary">Set Timer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Set Alarm Modal -->
+    <div class="modal fade" id="setAlarmModal" tabindex="-1" role="dialog" aria-labelledby="setAlarmModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="setAlarmModalLabel">Set Alarm</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Set Alarm</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./assets/font-awesome/js/all.js"></script>
+    <script src="./assets/js/script.js "></script>
+</body>

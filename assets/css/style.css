@@ -1,0 +1,114 @@
+            @import url('https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap');
+            * {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            
+            .header {
+                width: 100%;
+                height: 45px;
+                background-color: rgb(49, 48, 48);
+                color: #fff;
+                display: flex;
+                justify-content: space-between;
+                padding: 9px 110px;
+                font-family: 'Balsamiq Sans', cursive;
+                font-size: 18px;
+            }
+            
+            .pera {
+                font-size: 14px;
+            }
+            
+            .time {
+                text-align: center;
+                margin-top: 70px;
+                font-family: 'Balsamiq Sans', cursive;
+                font: 25px;
+                font-weight: 700;
+            }
+            
+            .button {
+                text-align: center;
+                margin-top: 20px;
+                font-family: 'Balsamiq Sans', cursive;
+            }
+            
+            .btn1 {
+                padding: 4px 16px;
+                background-color: rgb(68, 68, 243);
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .btn2 {
+                padding: 4px 16px;
+                background-color: rgb(14, 187, 240);
+                color: #fff;
+                border: none;
+                cursor: pointer;
+            }
+            
+            .container {
+                /* margin-left: 395px; */
+                padding-top: 20px;
+            }
+            
+            .card {
+                width: 400px;
+                margin-left: 145px;
+                font-family: 'Balsamiq Sans', cursive;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+            }
+            
+            .card-header {
+                background-color: rgb(61, 59, 59);
+                color: #fff;
+                height: 45px;
+            }
+            
+            .card-body {
+                text-align: center;
+            }
+            
+            .card-body a {
+                padding: 2px 6px;
+            }
+            
+            .card2 {
+                width: autos;
+                margin-left: 5px;
+                height: 278px;
+                box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+                font-family: 'Balsamiq Sans', cursive;
+            }
+            
+            .alarm-list {
+                width: auto;
+                height: 100px;
+                color: rgb(34, 33, 33);
+            }
+            /* .icon {
+    color: red;
+} */
+            
+            .list {
+                padding-left: 1px;
+            }
+            
+            .icon-bg {
+                width: 26px;
+                height: 25px;
+                background-color: white;
+                color: red;
+            }
+            
+            .icon-bg:hover {
+                width: 26px;
+                height: 25px;
+                background-color: red;
+                color: white;
+                cursor: pointer;
+            }
